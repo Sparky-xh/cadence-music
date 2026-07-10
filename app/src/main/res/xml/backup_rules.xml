@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Never back up cached auth tokens; downloads are re-fetched, not restored, to avoid
+         restoring dangling file paths on a new device. -->
+    <exclude domain="database" path="cadence_downloads.db" />
+</full-backup-content>
